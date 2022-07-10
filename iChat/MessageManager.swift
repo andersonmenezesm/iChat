@@ -32,8 +32,9 @@ class MessageManager: ObservableObject {
           print("Error decoding document into Message: \(error)")
           return nil
         }
-        
       }
+      
+      self.messages.sort { $0.timestamp < $1.timestamp }
     }
   }
 }
