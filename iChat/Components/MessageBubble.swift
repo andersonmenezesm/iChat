@@ -25,7 +25,7 @@ struct MessageBubble: View {
         }
         
         if showTime {
-          Text("\(message.timestemp.formatted(.dateTime.hour().minute()))")
+          Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
             .font(.caption2)
             .foregroundColor(.gray)
             .padding(message.received ? .leading : .trailing, 25)
@@ -40,6 +40,6 @@ struct MessageBubble: View {
 
 struct MessageBubble_Previews: PreviewProvider {
   static var previews: some View {
-    MessageBubble(message: Message(id: "12345", text: "I've been coding SwiftUI application from scratch and it's so much fun!", received: true, timestemp: Date()))
+    MessageBubble(message: Message(id: "12345", text: "I've been coding SwiftUI application from scratch and it's so much fun!", received: true, timestamp: Date()))
   }
 }
