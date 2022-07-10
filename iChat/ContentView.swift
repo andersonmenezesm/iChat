@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject var messagesManager = MessageManager()
+  @StateObject var messageManager = MessageManager()
 
   var body: some View {
     VStack {
@@ -16,7 +16,7 @@ struct ContentView: View {
         TitleRow()
         
         ScrollView {
-          ForEach(messagesManager.messages, id: \.id) { message in
+          ForEach(messageManager.messages, id: \.id) { message in
             MessageBubble(message: message)
           }
         }
@@ -27,6 +27,7 @@ struct ContentView: View {
       .background(Color("Peach"))
       
       MessageField()
+        .environmentObject(messageManager)
     }
   }
 }
