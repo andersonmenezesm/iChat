@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D678A20F287A6AA900BE6C99 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678A20E287A6AA900BE6C99 /* MessageManager.swift */; };
 		D6F1A0C5287729FD0001FAE3 /* iChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F1A0C4287729FD0001FAE3 /* iChatApp.swift */; };
 		D6F1A0C7287729FD0001FAE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F1A0C6287729FD0001FAE3 /* ContentView.swift */; };
 		D6F1A0C9287729FD0001FAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6F1A0C8287729FD0001FAE3 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D678A20E287A6AA900BE6C99 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		D6F1A0C1287729FD0001FAE3 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F1A0C4287729FD0001FAE3 /* iChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatApp.swift; sourceTree = "<group>"; };
 		D6F1A0C6287729FD0001FAE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				D6F1A0D228773B6C0001FAE3 /* Components */,
 				D6F1A0C8287729FD0001FAE3 /* Assets.xcassets */,
 				D6F1A0CA287729FD0001FAE3 /* Preview Content */,
+				D678A20E287A6AA900BE6C99 /* MessageManager.swift */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				D6F1A0DB2877D6570001FAE3 /* Extensions.swift in Sources */,
 				D6F1A0D72877BD580001FAE3 /* Message.swift in Sources */,
 				D6F1A0DD2877D9FF0001FAE3 /* MessageField.swift in Sources */,
+				D678A20F287A6AA900BE6C99 /* MessageManager.swift in Sources */,
 				D6F1A0D92877BEF70001FAE3 /* MessageBubble.swift in Sources */,
 				D6F1A0C5287729FD0001FAE3 /* iChatApp.swift in Sources */,
 				D6F1A0D428773BA60001FAE3 /* TitleRow.swift in Sources */,
