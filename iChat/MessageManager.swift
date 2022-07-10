@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 class MessageManager: ObservableObject {
   @Published private(set) var messages: [Message] = []
+  @Published private(set) var lastMessageId = ""
   let db = Firestore.firestore()
   
   init() {
@@ -34,6 +35,10 @@ class MessageManager: ObservableObject {
       }
       
       self.messages.sort { $0.timestamp < $1.timestamp }
+      
+      if let id = self.messages.last?.id {
+        self.lastMessageId = id
+      }
     }
   }
   

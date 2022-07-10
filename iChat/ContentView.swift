@@ -15,14 +15,21 @@ struct ContentView: View {
       VStack {
         TitleRow()
         
-        ScrollView {
-          ForEach(messageManager.messages, id: \.id) { message in
-            MessageBubble(message: message)
+        ScrollViewReader { proxy in
+          ScrollView {
+            ForEach(messageManager.messages, id: \.id) { message in
+              MessageBubble(message: message)
+            }
+          }
+          .padding(.top, 10)
+          .background(.white)
+          .cornerRadius(30, corners: [.topLeft, .topRight])
+          .onChange(of: messageManager.lastMessageId) { id in
+            withAnimation {
+              proxy.scrollTo(id, anchor: .bottom)
+            }
           }
         }
-        .padding(.top, 10)
-        .background(.white)
-        .cornerRadius(30, corners: [.topLeft, .topRight])
       }
       .background(Color("Peach"))
       
