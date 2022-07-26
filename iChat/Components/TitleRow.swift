@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TitleRow: View {
-  var imageUrl = URL(string: "https://avatars.githubusercontent.com/u/47919476?v=4")
-  var name = "Anderson Menezes"
+  var imageUrl = URL(string: "https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")
+  var name = "John Due"
 
   var body: some View {
     HStack(spacing: 20) {

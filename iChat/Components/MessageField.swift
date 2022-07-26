@@ -29,7 +29,7 @@ struct MessageField: View {
     .padding(.horizontal)
     .padding(.vertical, 10)
     .background(Color("Gray"))
-    .cornerRadius(20)
+    .cornerRadius(50)
     .padding()
   }
 }
